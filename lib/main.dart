@@ -1,6 +1,6 @@
+import 'package:car_shop/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:car_shop/constans.dart';
-import 'package:car_shop/screens/home/home_screen.dart';
 
 void main() {
   runApp(MyApp());
