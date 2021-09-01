@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
   AppBar buildAppBar() {
     return AppBar(
       backgroundColor: Colors.white,
-      elevation: 3,
+      elevation: 1,
       leading: IconButton(
         icon: Image.asset("assets/icons/left-arrow.png"),
         onPressed: () {},
