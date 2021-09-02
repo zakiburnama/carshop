@@ -20,7 +20,10 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Colors.white,
       elevation: 0,
       leading: IconButton(
-        icon: Image.asset("assets/icons/left-arrow.png"),
+        icon: Image.asset(
+          "assets/icons/back.png",
+          height: 27,
+        ),
         onPressed: () {},
       ),
       actions: <Widget>[

@@ -1,4 +1,5 @@
 import 'package:car_shop/models/Product.dart';
+import 'package:car_shop/screens/details/details_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:car_shop/constans.dart';
 
@@ -34,8 +35,17 @@ class Body extends StatelessWidget {
                 crossAxisSpacing: kDefaultPaddin,
                 childAspectRatio: 0.75,
               ), 
-              itemBuilder: (context, index) => 
-                itemCard(product: products[index]),
+              itemBuilder: (context, index) => itemCard(
+                product: products[index],
+                press: () => Navigator.push(
+                  context, 
+                  MaterialPageRoute(
+                    builder: (context) => DetailsScreen(
+                      product: products[index],
+                  )
+                  )
+                ),
+              ),
             ),
           )
         )
@@ -44,4 +54,3 @@ class Body extends StatelessWidget {
     );
   }
 }
-
